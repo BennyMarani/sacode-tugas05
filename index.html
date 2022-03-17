@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Testimonial Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Testimonial</h1>
+            
+            <div class="container">
+                <div class="indicator">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+                <div class="testimonial">
+                    <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Kakak Petrus Widodo, kakak bertho, dan saya. kami sedang makan siang  
+                            </p>
+                            <h3>Rapat Kantor</h3>
+                            <p>Pt.PPMA Papua</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="01.jpg">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Gilbert, salah satu keponakan yang berumur 9 tahun, sedang melakukan pose menggunakan beberapa aksesoris  
+                            </p>
+                            <h3>Gill</h3>
+                            <p>Marani Famaly</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="02.jpg">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Zuzeth dan Priskila, tante dan keponakan sedang berpose di depan sebuah rumah
+                            </p>
+                            <h3>Marani</h3>
+                            <p>Marani Famaly</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="03.jpg">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+        <script>
+            var btn = document.getElementsByClassName("btn")
+            var slide = document.getElementById("slide")
+
+            btn[0].onclick = function(){
+                slide.style.transform = "translatex(0px)"
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("active");
+                    }
+                this.classList.add("active");
+            }
+            btn[1].onclick = function(){
+                slide.style.transform = "translatex(-800px)"
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("active");
+                    }
+                this.classList.add("active");
+            }
+            btn[2].onclick = function(){
+                slide.style.transform = "translatex(-1600px)"
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("active");
+                    }
+                this.classList.add("active");
+            }
+            
+        </script>
+    </body>
+</html>
